@@ -1,0 +1,26 @@
+== Casual Time
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+In dieser Aufgabe schreibst Du ein Programm, das eine Uhrzeit, z. B. 23:30, so formatiert, wie man sie in englischsprachigen Ländern informell (_casually_) ausdrückt, in diesem Fall «half past 11».
+
+Vervollständige das Programm `CasualTime`, indem Du die Methode `convertToCasual` implementierst. Diese Methode nimmt als Parameter einen String im Format `HH:MM` (Stunden und Minuten) und soll einen String mit der informellen Uhrzeit zurückgeben. Ein paar Beispiele:
+
+[%autowidth,cols="^1,1"]
+|===
+| HH:MM | Casual
+
+| 01:00 | 1 o'clock
+| 18:00 | 6 o'clock
+| 23:30 | half past 11
+| 04:20 | 20 past 4
+| 17:49 | 11 minutes to 6
+|===
+
+Das genaue Format wird im https://dictionary.cambridge.org/grammar/british-grammar/telling-the-time[Cambridge Dictionary] erklärt, unter «Saying the time». Die am/pm-Unterscheidung wird in dieser Aufgabe ignoriert.
+
+In der Klasse `CasualTimeTest` sind zwei erste Unit-Tests vorhanden, aber Du sollst weitere Tests hinzufügen. Versuche, nach dem https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung#TDD_nach_Kent_Beck[TDD]-Ansatz vorzugehen, den Du im Einführungs-Workshop kennengelernt hast.

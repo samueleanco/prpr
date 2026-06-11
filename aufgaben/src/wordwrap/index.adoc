@@ -1,0 +1,50 @@
+== Automatischer Zeilenumbruch
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+In dieser Aufgabe schreibst Du ein Programm, das einen langen Text automatisch in mehrere Zeilen mit einer maximalen Länge umbricht. Dazu implementierst Du eine Klasse `WordWrapper` und auch die dazugehörigen Unit-Tests.
+
+Die Klasse soll man wie folgt verwenden können:
+
+[source,java]
+----
+var text = "Dies ist ein Text, der umgebrochen werden soll.";
+var wrapper = new WordWrapper(20); // Zeilenlänge 20
+var wrapped = wrapper.wrap(text);
+System.out.println(wrapped);
+----
+
+Die Ausgabe dieses Programms wäre dann:
+
+----
+Dies ist ein Text,
+der umgebrochen
+werden soll.
+----
+
+Falls im Originaltext bereits Zeilenumbrüche vorkommen, sollen diese eliminiert werden, ebenso wie mehrere Leerzeichen hintereinander. Zum Beispiel würde folgender Text:
+
+----
+Ein     kurzer
+ Text mit nur    einem
+Umbruch
+----
+
+so umgebrochen:
+
+----
+Ein kurzer Text mit
+nur einem Umbruch
+----
+
+Versuche wieder, nach TDD vorzugehen: Beginne, indem Du einen einfachen Unit-Test schreibst, der mal nur testet, dass die Methode `wrap` existiert und den Text unverändert zurückgibt, wenn er leer ist. Erweitere dann die Test-Suite und die Implementierung, bis Du denkst sind, dass Du an alles gedacht hast.
+
+.*Tipp*
+[%collapsible]
+====
+Diese Aufgabe ist am einfachsten mit der `https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html[Scanner]`-Klasse zu lösen, da der `Scanner` automatisch bei Leerzeichen und Zeilenumbrüchen trennt. In oopI1 haben wir den `Scanner` meistens mit `System.in` verwendet, aber man kann als Konstruktor-Argument auch einen String übergeben.
+====

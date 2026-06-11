@@ -1,0 +1,40 @@
+== Calculator: Code aufräumen und debuggen
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+In dieser Aufgabe geht es darum, bestehende Programme zu verbessern. Du schreibst dieses Mal also nicht gross eigenen Code, sondern wirst vor allem vorhandenen Code genau lesen müssen. Das ist ebenfalls eine wichtige Fähigkeit – vielleicht sogar wichtiger noch als selbst Code zu schreiben (was ja mehr und mehr von KI-Tools übernommen wird).
+
+Im Package `calc` befindet sich ein Programm, das einfache arithmetische Ausdrücke einliest und auswertet (Eingaben in fett):
+
+[subs="quotes"]
+----
+calc> *4 + 7*
+11.0
+
+calc> *42.5 * 0.25*
+10.625
+
+calc> *-8*
+-8.0
+----
+
+Die Kernlogik befindet sich in der Klasse `Calculator`, wofür es auch Unit-Tests gibt. Leider befinden sich darin *vier Fehler* und die Tests sind offenbar unvollständig.
+
+[loweralpha]
+. Räume zuerst mal auf in der Klasse `Calculator`, damit die Programmlogik verständlich wird und Fehler einfacher zu finden sind. Verwende die xref:../aufraeum-checkliste/index.adoc[Aufräum-Checkliste] dafür.
++
+Findest Du durch das Aufräumen bereits Fehler? Wenn ja, notiere die Stellen, damit Du nachher entsprechende Testfälle hinzufügen kannst. Ändere während dem Aufräumen aber noch nichts an der Programmlogik oder an den Tests.
+
+. Ergänze die Testklasse `CalculatorTest` um die zuvor notierten Testfälle. Decken sie tatsächlich Fehler auf? Lies die restlichen Tests durch und identifiziere weitere Lücken.
+
+. Versuche, die aufgedeckten Fehler zu beheben. Verwende folgende Hilfsmittel dazu:
++
+* Warnungen von IntelliJ inspizieren. Falls diese nicht verständlich sind, lass sie Dir von Copilot Chat oder ChatGPT erklären. (Beispiel-Prompt: «_Was bedeutet die Warnung "Field 'MAX_DIGITS' is never used" in IntelliJ?_»)
+* `System.out.println`-Befehle einfügen, um den Programmablauf zu verstehen.
+* Auf Papier den Ablauf einer Methode durchspielen, um die Logik zu verstehen.
+* Mit dem IntelliJ-Debugger Schritt für Schritt durch den Code einer Methode gehen.
+* Copilot Chat oder ChatGPT um Hilfe bitten. Aber Vorsicht, manchmal finden diese Tools «Fehler», die gar keine sind. Deshalb sollte man nie blindlings Code übernehmen, sondern nur, wenn man ihn genau versteht.

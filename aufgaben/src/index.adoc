@@ -1,0 +1,36 @@
+= Programmier - Aufgaben
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+Sinn und Zweck des prpr Moduls ist wie der Name sagt: Programmierpraxis - Programmieren, und dies am besten von Hand und überlegt. Verwende KI nur dann, wenn Du selber nicht weiterkommst und am besten, als Unterstützung, nicht um die Lösung zu generieren, sondern um Dir den Weg zur Lösung aufzuzeigen.
+
+In den hier vorhandenen Packages findest Du verschiedene Programmieraufgaben. Achte auf die Hinweise und Tests und probiere sie vorallem zu Verstehen beim Lösen. Arbeite zuerst alleine am Verständnis der Aufgabe und bespreche dann deinen Lösungsansatz mit einer/einem Sitznachbar:in, bevor Du loslegst. Wenn Du schon mal erklären kannst, was Du vorhast, gelingt das Programmieren schon besser, also wenn man planlos drauf loshackt.
+
+Folgende Aufgaben sind zu lösen:
+
+link:./casualtime/index.adoc[casualtime - Casual Time]
+
+link:./wordwrap/index.adoc[wordwrap - Automatischer Zeilenumbruch]
+
+link:./morse/index.adoc[morse - Morsecode]
+
+link:./datetime/index.adoc[datetime - Datumsangaben und Uhrzeiten formatieren]
+
+link:./calc/index.adoc[calc - Calculator: Code aufräumen und debuggen]
+
+
+== Do's
+* Die Aufgaben als Weg zum Erlernen und Einüben verstehen und nicht als mühsames Pflichtprogramm.
+* Regelmässige Commits mit sinnvollen Commit Messages
+* Regelmässige Pushs, mindestens nach jeder Aufgabe, besser aber bei jedem neuen laufenden Teilschritt, wie Test geschreiben, Teilfunktion implementiert, etc.
+* Lernerfolge und Erfahrungen ins link:reflexion.adoc[Arbeitstagebuch] schreiben zur Reflexion über das Gelernte.
+* Mitstudierenden helfen - einander Dinge erklären und gemeinsam bearbeiten hilft beim Erlernen.
+
+== Dont's
+* KI alles machen lassen. So lernst Du selber nichts.
+* Lösungen von anderen Copy&Pasten. So lernst Du selber ebenfalls nichts.
+

@@ -1,0 +1,55 @@
+== Datumsangaben und Uhrzeiten formatieren
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+In dieser Aufgabe schreibst Du ein einfaches Programm mit einem _Interface_ und zwei Implementierungen davon.
+
+Der Kern des Programms ist eine Klasse `TextFormatter`, welche zum Beispiel einen solchen Text bekommt:
+
+----
+Am ${ 2024 06 24 } findet das Kickoff für das Modul
+statt. Es beginnt um ${ 09 00 } und dauert bis
+${ 14 30 } (spätestens). Die Abgabefrist für das
+Projekt ist am ${ 2024 09 01 } um Mitternacht.
+----
+
+und die darin enthaltenen Elemente `${ … }` durch eine formatierte Version ersetzt. Zum Beispiel könnte der formatierte Text so aussehen:
+
+----
+Am 24.06.2024 findet das Kickoff für das Modul
+statt. Es beginnt um 09:00 und dauert bis
+14:30 (spätestens). Die Abgabefrist für das
+Projekt ist der 01.09.2024 um Mitternacht.
+----
+
+Die Klasse `TextFormatter` ist für das Parsen des Texts zuständig, aber das Formatieren der Datumsangaben und Uhrzeiten wird an ein _Interface_ `DateTimeFormat` delegiert, mit zwei Methoden:
+
+* `String formatDate(int year, int month, int day)`
+* `String formatTime(int hour, int minute)`
+
+Dadurch kann man verschiedene Implementierungen von `DateTimeFormat` erstellen, um die Datumsangaben und Uhrzeiten unterschiedlich zu formatieren. Mit einer anderen Implementierung könnte der Text z. B. so formatiert werden:
+
+----
+Am 24. Juni '24 findet das Kickoff für das Modul
+statt. Es beginnt um 9 Uhr und dauert bis
+14 Uhr 30 (spätestens). Die Abgabefrist für das
+Projekt ist der 1. September '24 um Mitternacht.
+----
+
+[loweralpha]
+. Beginne, indem Du den Code im Programm `TextFormatterApp` einkommentierst und die benötigten Klassen und das benötigte Interface erstellst. Du kannst vorerst leere Methoden/Konstruktoren verwenden; das Programm soll einfach mal kompilieren.
+
+. Implementiere die Methoden in den Klassen `FormalDateTimeFormat` und `CasualDateTimeFormat` mittels TDD. Die beiden Formate entsprechen den beiden obigen Beispielen. (Es gibt keinen Zusammenhang zur Aufgabe weiter oben.) Beachte folgenden Spezialfall für `CasualDateTimeFormat`: Das Jahr wird mit zwei Ziffern angegeben, aber nur, wenn es zwischen 2000 und 2099 liegt; andernfalls werden alle Ziffern angegeben (z. B. 1999 oder 925).
+
+. Implementiere zum Schluss die Klasse `TextFormatter`. Es empfiehlt sich, einen `Scanner` und die Methoden `hasNext`, `next`, `hasNextInt` und `nextInt` zu verwenden. Du kannst folgende Annahmen machen, welche die Implementation vereinfachen:
++
+--
+* `${` und `}` kommen immer als einzelne _Tokens_ im Text vor, d. h. sie sind durch Leerzeichen von anderen Wörtern getrennt.
+* Der Text enthält keine Zeilenumbrüche oder mehrere Leerzeichen direkt hintereinander.
+--
++
+Gehe auch hier nach TDD vor.

@@ -1,0 +1,47 @@
+= Mein Arbeitstagebuch zur Reflexion
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+Bearbeitet durch: _Vorname Nachname_
+
+E-Mail: _...@students.fhnw.ch_
+
+'''
+== Do's
+* Jeden Abend kurze Notizen schreiben, welche man später noch ausformulieren kann. Commit&Push every day.
+
+== Dont's
+* KI die Reflexion schreiben lassen.
+
+'''
+
+=== Was habe ich heute gemacht?
+* erstelle pro Tag einen Abschnitt
+
+=== Spass gemacht hat?
+
+=== Mühsam war?
+
+=== Was ich noch Anschauen will
+
+
+
+
+'''
+Aufgaben:
+
+link:./calc/index.adoc[calc - Calculator: Code aufräumen und debuggen]
+
+link:./casualtime/index.adoc[casualtime - Casual Time]
+
+link:./datetime/index.adoc[datetime - Datumsangaben und Uhrzeiten formatieren]
+
+link:./morse/index.adoc[morse - Morsecode]
+
+link:./wordwrap/index.adoc[wordwrap - Automatischer Zeilenumbruch]
+
+
+
