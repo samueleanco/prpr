@@ -31,17 +31,17 @@ E-Mail: _...@students.fhnw.ch_
 
 
 '''
-Aufgaben:
+Hier nochmals die Links zu den Aufgaben, so kann man die Reflexion gleich mit den Aufgaben verknüpfen:
 
-link:./calc/index.adoc[calc - Calculator: Code aufräumen und debuggen]
+link:./aufgaben/src/calc/index.adoc[calc - Calculator: Code aufräumen und debuggen]
 
-link:./casualtime/index.adoc[casualtime - Casual Time]
+link:./aufgaben/src/casualtime/index.adoc[casualtime - Casual Time]
 
-link:./datetime/index.adoc[datetime - Datumsangaben und Uhrzeiten formatieren]
+link:./aufgaben/src/datetime/index.adoc[datetime - Datumsangaben und Uhrzeiten formatieren]
 
-link:./morse/index.adoc[morse - Morsecode]
+link:./aufgaben/src/morse/index.adoc[morse - Morsecode]
 
-link:./wordwrap/index.adoc[wordwrap - Automatischer Zeilenumbruch]
+link:./aufgaben/src/wordwrap/index.adoc[wordwrap - Automatischer Zeilenumbruch]
 
 
 

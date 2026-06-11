@@ -1,0 +1,30 @@
+= prpr - Programmierpraxis
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+
+Bearbeitet durch: _Vorname Nachname_
+
+E-Mail: _...@students.fhnw.ch_
+
+== Sinn und Zweck
+
+Sinn und Zweck des prpr Moduls ist wie der Name sagt: Programmierpraxis - Programmieren, und dies am besten von Hand und überlegt. Verwende KI nur dann, wenn Du selber nicht weiterkommst und am besten, als Unterstützung, nicht um die Lösung zu generieren, sondern um Dir den Weg zur Lösung aufzuzeigen.
+
+In den hier vorhandenen Packages findest Du verschiedene Programmieraufgaben. Achte auf die Hinweise und Tests und probiere sie vorallem zu Verstehen beim Lösen. Arbeite zuerst alleine am Verständnis der Aufgabe und bespreche dann deinen Lösungsansatz mit einer/einem Sitznachbar:in, bevor Du loslegst. Wenn Du schon mal erklären kannst, was Du vorhast, gelingt das Programmieren schon besser, also wenn man planlos drauf loshackt.
+
+== Aufgaben
+
+Hier geht's los:
+
+link:./aufgaben/src/index.adoc[zu den Aufgaben]
+
+== Reflexion
+
+Um den Lernerfolg zu verstärken, hilft es sich bewusst zu werden, was man wie gemacht hat. Es lohnt sich also (selber!) eine Reflexion zu schreiben.
+
+Das kannst Du gleich hier im link:./reflexion.adoc[hier] machen.
