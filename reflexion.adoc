@@ -11,10 +11,10 @@ E-Mail: _...@students.fhnw.ch_
 
 '''
 == Do's
-* Jeden Abend kurze Notizen schreiben, welche man später noch ausformulieren kann. Commit&Push every day.
+NOTE: Jeden Abend kurze Notizen schreiben, welche man später noch ausformulieren kann. Commit&Push every day.
 
 == Dont's
-* KI die Reflexion schreiben lassen.
+IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 

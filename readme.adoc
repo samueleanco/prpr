@@ -21,10 +21,12 @@ In den hier vorhandenen Packages findest Du verschiedene Programmieraufgaben. Ac
 
 Hier geht's los:
 
-link:./aufgaben/src/index.adoc[zu den Aufgaben]
+CAUTION: link:./aufgaben/src/index.adoc[zu den Aufgaben]
 
 == Reflexion
 
 Um den Lernerfolg zu verstärken, hilft es sich bewusst zu werden, was man wie gemacht hat. Es lohnt sich also (selber!) eine Reflexion zu schreiben.
 
-Das kannst Du gleich hier im link:./reflexion.adoc[hier] machen.
+Das kannst Du gleich link:./reflexion.adoc[hier] erledigen.
+
+TIP: Zur Bearbeitung und Gestaltung verwenden wir https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc]. Es gibt dazu auch ein https://plugins.jetbrains.com/plugin/7391-asciidoc[IntelliJ Plugin].

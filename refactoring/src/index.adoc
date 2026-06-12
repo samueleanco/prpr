@@ -1,4 +1,4 @@
-= Refactoring
+= Clean Code und Refactoring
 :sectnums:
 :sectnumlevels: 2
 :experimental:
@@ -73,14 +73,13 @@ Die Einträge sind allerdings abhängig von der Cursor-Position in einer Datei.
 
 Nachfolgend sind vier automatische Refactorings aufgeführt, die man sehr häufig braucht und die man auch in der in diesem Block gestellten Aufgabe anwenden kann.
 
-Bei den Refactorings (ausser beim Rename, da gehe ich davon aus, dass Du bereits damit vertraut ist, da es im letzten Input gezeigt worden ist). steht jeweils ein (zugegeben etwas konstruiertes) Beispiel, bei dem die beschriebenen Refactorings ausgeführt werden können und auch sollen.
+Bei den Refactorings steht jeweils ein (zugegeben etwas konstruiertes) Beispiel, bei dem die beschriebenen Refactorings ausgeführt werden können und auch sollen.
 
 NOTE: Wir werden die Beispiele in der Klasse gemeinsam refactorn. Überlege Dir schon mal, wie das Ergebnis nach dem Refactoring aussehen sollte und warum! Du kannst mit Aufklappen des Ziels überprüfen, ob wir dieselben Vorstellungen haben.
 
 
 ==== Rename …
 
-Dieses Refactoring wurde im Zusammenhang mit der Wichtigkeit von guten Namen bereits im letzten Input erwähnt.
 Rename kann für Variablen, Methoden und Klassen verwendet werden.
 Es ist sehr praktisch, da es uns erspart, alle aufrufenden Stellen einer Variable, Methode oder Klasse von Hand anzupassen.
 Der Shortcut ist: kbd:[Shift+F6].
