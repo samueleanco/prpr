@@ -19,6 +19,8 @@ PS: Generelle Java Quelle 😊 https://dev.java/learn
 
 https://mylearn.oracle.com/ou/learning-path/java-explorer/79726/[Java Basics - 7h]
 
+https://www.youtube.com/watch?v=eIrMbAQSU34[Java Full Course for Beginners - Programming with Mosh]
+
 https://www.linkedin.com/learning/java-fur-fortgeschrittene/lernen-sie-die-techniken-der-java-profis?u=50817177[Java für Fortgeschrittene (Generics, Functional Interfaces, Nebenläufigkeit und Ein-/Ausgabe (I/O)) - 1:51]
 
 https://www.linkedin.com/learning/java-grundkurs-2-objektorientierte-programmierung-fehlerbehandlung-stream-api/tiefer-in-die-java-programmierung-einsteigen-objektorienterte-programmierung-fehlerbehandlung-und-andere-featu?u=50817177[Java Grundkurs 2: Objektorientierte Programmierung, Fehlerbehandlung, Stream-API - 2:25]
@@ -26,7 +28,12 @@ https://www.linkedin.com/learning/java-grundkurs-2-objektorientierte-programmier
 https://www.linkedin.com/learning/datenbankprogrammierung-und-integration-in-java/jdbc-jpa-und-die-grundlagen-der-datenbankprogrammierung-verstehen-und-uben?u=50817177[Datenbankprogrammierung und -integration in Java (JDBC, JPA und die Grundlagen der Datenbankprogrammierung verstehen und üben) - 0:57
 ]
 
-...
+
+...eigene Ideen?
 
 ...
+
+Online Lernprogramme:
+
+https://coddy.tech/[Coddy Tech] - 5 h damit arbeiten anstatt Videos zu schauen; hat einen online code editor eingebaut.
 
