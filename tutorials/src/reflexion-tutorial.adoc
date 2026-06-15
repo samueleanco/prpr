@@ -1,0 +1,32 @@
+= Reflexion Tutorial
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+Bearbeitet durch: _Vorname Nachname_
+
+E-Mail: _...@students.fhnw.ch_
+
+'''
+== Do's
+NOTE: Laufend Notizen schreiben, welche man später noch ausformulieren kann. Commit&Push often.
+
+== Dont's
+IMPORTANT: KI die Reflexion schreiben lassen.
+
+'''
+
+=== Welche/s Tutorial/s habe ich durchgearbeitet?
+
+=== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
+
+=== Spass gemacht hat?
+
+=== Mühsam war?
+
+=== Was ich noch Anschauen will
+
+
+

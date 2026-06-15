@@ -17,16 +17,26 @@ Sinn und Zweck des prpr Moduls ist wie der Name sagt: Programmierpraxis - Progra
 
 In den hier vorhandenen Packages findest Du verschiedene Programmieraufgaben. Achte auf die Hinweise und Tests und probiere sie vorallem zu Verstehen beim Lösen. Arbeite zuerst alleine am Verständnis der Aufgabe und bespreche dann deinen Lösungsansatz mit einer/einem Sitznachbar:in, bevor Du loslegst. Wenn Du schon mal erklären kannst, was Du vorhast, gelingt das Programmieren schon besser, also wenn man planlos drauf loshackt.
 
+Ein weiterer Teil des Moduls besteht darin ein Onlinetutorial durchzuarbeiten. Dadurch könnt Ihr im eigenen Tempo und nach eigener Auswahl Themenbereiche wiederholen und vertiefen. Auch dazu muss eine Reflexion geschrieben werden.
+
 == Aufgaben
 
 Hier geht's los:
 
 CAUTION: link:./aufgaben/src/index.adoc[zu den Aufgaben]
 
-== Reflexion
+== Reflexion zu den Aufgaben
 
 Um den Lernerfolg zu verstärken, hilft es sich bewusst zu werden, was man wie gemacht hat. Es lohnt sich also (selber!) eine Reflexion zu schreiben.
 
 Das kannst Du gleich link:./reflexion.adoc[hier] erledigen.
 
 TIP: Zur Bearbeitung und Gestaltung verwenden wir https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc]. Es gibt dazu auch ein https://plugins.jetbrains.com/plugin/7391-asciidoc[IntelliJ Plugin].
+
+== Tutorials
+
+Hier geht's weiter:
+
+CAUTION: link:./tutorials/src/index.adoc[zu den Tutorials]
+
+Die Reflexion zu den Tutorials findest Du am gleichen Ort wie die Tutorials selber.

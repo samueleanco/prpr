@@ -1,0 +1,32 @@
+= Tutorials
+:sectnums:
+:page-pdf-download: true
+:icons: font
+:table-grid: none
+:table-frame: ends
+:table-stripes: even
+
+Learning by doing - erfolgt in den Aufgaben.
+Lernen braucht auch Repetition. Manchmal ist es gut, sich auch ev. bereits Bekanntes nochmals zu Gemüte zu führen. Lernen bedeutet Wissen verknüpfen zu können. Dazu habe ich euch ein paar Online Tutorials herausgesucht. Wählt daraus oder sucht andere, welche Ihr durcharbeitet. Aufgaben daraus hier ins Repo kopieren und lösen bei Bedarf und zwingend, auch dazu eine Reflexion schreiben. Was war gut am Tutorial, was wurde gelernt?
+
+PS: Generelle Java Quelle 😊 https://dev.java/learn
+
+=== Todo:
+* Tutorials durcharbeiten
+* dazu link:./reflexion-tutorial.adoc[Reflexion] schreiben
+
+=== Mögliche Tutorials:
+
+https://mylearn.oracle.com/ou/learning-path/java-explorer/79726/[Java Basics - 7h]
+
+https://www.linkedin.com/learning/java-fur-fortgeschrittene/lernen-sie-die-techniken-der-java-profis?u=50817177[Java für Fortgeschrittene (Generics, Functional Interfaces, Nebenläufigkeit und Ein-/Ausgabe (I/O)) - 1:51]
+
+https://www.linkedin.com/learning/java-grundkurs-2-objektorientierte-programmierung-fehlerbehandlung-stream-api/tiefer-in-die-java-programmierung-einsteigen-objektorienterte-programmierung-fehlerbehandlung-und-andere-featu?u=50817177[Java Grundkurs 2: Objektorientierte Programmierung, Fehlerbehandlung, Stream-API - 2:25]
+
+https://www.linkedin.com/learning/datenbankprogrammierung-und-integration-in-java/jdbc-jpa-und-die-grundlagen-der-datenbankprogrammierung-verstehen-und-uben?u=50817177[Datenbankprogrammierung und -integration in Java (JDBC, JPA und die Grundlagen der Datenbankprogrammierung verstehen und üben) - 0:57
+]
+
+...
+
+...
+
