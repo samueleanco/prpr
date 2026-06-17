@@ -88,7 +88,7 @@ Der Shortcut ist: kbd:[Shift+F6].
 ==== Extract/Introduce …
 
 Wenn wir Code überarbeiten, dann wollen wir oft gewisse Codeteile in eine andere Struktur überführen.
-Das betrifft v. a. *Variablen, Konstanten Parameter oder Methoden*.
+Das betrifft v. a. *Variablen, Konstanten, Parameter oder Methoden*.
 
 Je nach Kontext heissen diese Refactorings «extract …» oder «introduce …».
 Auch hier ersparen uns automatische Refactorings das manuelle Anpassen des Codes, in dem automatisch alle zu ändernden Stellen erkennt werden.
@@ -249,11 +249,11 @@ public class Product {
 ====
 [source, java, linenum]
 ----
-public class Position {
+public class Order {
     private Product product;
     private int quantity;
 
-    public Position(Product product, int quantity) {
+    public Order(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
@@ -306,10 +306,10 @@ IMPORTANT: Nach jedem Refactoring (manuell oder automatisch) lassen wir alle Tes
 
 
 [#to-do-liste]
-=== Übung: To-Do-Liste
+== Aufgabe: To-Do-Liste
 
-Als Vorbereitung für Aufgabe 3 werden wir eine sehr kleine To-Do-Liste-Applikation verbessern.
-Aktuell ist alles in einer Klasse implementiert. Da zusätzliche Anforderungen implementiert werden sollen, haben wir entschieden, zum jetzigen Zeitpunkt eine vernünftige Aufteilung anzustreben, um ein gutes Design möglichst iterativ zu erhalten.
+Als erste Aufgabe gilt es eine kleine To-Do-Liste-Applikation zu verbessern.
+Aktuell ist alles in einer Klasse implementiert. Da später zusätzliche Anforderungen implementiert werden sollen, haben wir entschieden, zum jetzigen Zeitpunkt eine vernünftige Aufteilung anzustreben, um ein gutes Design möglichst iterativ zu erhalten. Im PDF sind die schrittweisen Refactorings aufgeführt um das Ziel zu erreichen.
 
 Ziel:
 
