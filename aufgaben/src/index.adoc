@@ -27,6 +27,6 @@ link:./calc/index.adoc[calc - Calculator: Code aufräumen und debuggen]
 * Mitstudierenden helfen - einander Dinge erklären und gemeinsam bearbeiten hilft beim Erlernen.
 
 == Dont's
-* KI alles machen lassen. So lernst Du selber nichts.
-* Lösungen von anderen Copy&Pasten. So lernst Du selber ebenfalls nichts.
+* KI nicht alles machen lassen. Sonst lernst Du selber nichts.
+* Lösungen nicht von anderen Copy&Pasten. Sonst lernst Du selber ebenfalls nichts.
 
