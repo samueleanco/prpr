@@ -11,7 +11,7 @@ Das ist ein Grund, Refactorings zu machen.
 Ein weiterer Grund sind Überlegungen zum Software-Design.
 Damit meinen wir nicht das UI, sondern die Art und Weise wie der Code organisiert ist.
 Das Ziel von gut organisiertem Code ist eine gute Wartbarkeit.
-Es hat sich gezeigt, dass eine gute Wartbarkeit erreicht wird, wenn nach folgende Designprinzipien gearbeitet wird:
+Es hat sich gezeigt, dass eine gute Wartbarkeit erreicht wird, wenn nach folgenden Designprinzipien gearbeitet wird:
 
 * Modularität: wenn der Code in gute Teile gegliedert ist.
 * Separation of Concerns: wenn die Gliederung so gestaltet ist, dass bei Änderungen möglichst nur ein Modul angefasst werden muss, weil nur dieser Teil für etwas verantwortlich ist.
@@ -26,7 +26,7 @@ Abstraktionen sind auch die Voraussetzung, um eine lose Kopplung zu erreichen.
 
 Diese Prinzipien im Detail zu beurteilen, erfordert einiges an Erfahrung und sprengt den Rahmen dieses Moduls.
 
-Ganz allgemein können wir aber sagen, dass wenn eine gute Testbarkeit gegeben ist, die Designprinzipien in den meisten Fällen eingehalten wird.
+Ganz allgemein können wir aber sagen, dass wenn eine gute Testbarkeit gegeben ist, die Designprinzipien in den meisten Fällen eingehalten werden.
 
 Und da wir zuerst die Tests schreiben :-), ist eine gute Testbarkeit automatisch gegeben und die Chance, dass wir gut organisierten Code schreiben, steigt ebenfalls.
 
@@ -36,7 +36,7 @@ Es macht durchaus Sinn, erst mal die Funktionalität zu erreichen, das wissen wi
 Ein weiterer Anwendungsfall für Refactoring ist dann gegeben, wenn wir neue Funktionalität in vorhandenen Code einbauen wollen.
 Bei grösseren Änderungen kann es Sinn machen, zuerst das Design anzupassen, *bevor* man die neue Funktionalität einfügt oder einfügen kann.
 
-Wichtig ist, dass wir erkennen, dass wir mit dem Programmieren nicht fertig sind, wenn das Feature mal gerade so läuft, sondern dass wir dann noch den Code so schreiben (Stichwort aufräumen), dass andere und auch wir selber den Code später wieder verstehen.
+Wichtig ist, dass wir erkennen, dass wir mit dem Programmieren nicht fertig sind, wenn das Feature mal gerade so läuft, sondern dass wir dann noch den Code so schreiben (Stichwort Aufräumen), dass andere und auch wir selber den Code später wieder verstehen.
 
 === Was bedeutet Refactoring?
 
@@ -302,7 +302,7 @@ Das kann durch folgende Konvention in den Commit-Messages ausgedrückt werden:
 Diese Konvention macht es einfacher den Code zu reviewen, wenn ausschliesslich automatische Refactorings der IDE verwendet werden, kann davon ausgegangen werden, dass die Änderungen ok sind.
 --
 
-IMPORTANT: Nach jedem Refactoring (manuell oder automatisch) lassen wir alle Tests laufen, um sicherzustellen, dass wir nichts verändert haben.
+IMPORTANT: Nach jedem Refactoring (manuell oder automatisch) lassen wir alle Tests laufen, um sicherzustellen, dass wir nichts Funktionales verändert haben.
 
 
 [#to-do-liste]
