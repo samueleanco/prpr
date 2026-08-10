@@ -22,12 +22,15 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 ==== Was habe ich heute gemacht?
 CasualTime gelöst — zuerst simpel mit if/else, dann eine separate Methode für das Stundenformat extrahiert, um den Code übersichtlicher zu gestalten.
+WordWrapper gelöst — Text wird auf eine maximale Zeilenbreite umgebrochen.
 
 ==== Spass gemacht hat?
 Das Refactoring der `hourFormat`-Methode.
+Den `Scanner` kennengelernt und verstanden, wie er Text tokenweise einliest.
 
 ==== Mühsam war?
 Die erste Lösung mit vielen verschachtelten if/else-Verzweigungen.
+Das Sonderverhalten bei Leerzeichen: eine Zeile, die nur aus Leerzeichen besteht, musste gesondert behandelt werden.
 
 ==== Was ich noch Anschauen will
 
