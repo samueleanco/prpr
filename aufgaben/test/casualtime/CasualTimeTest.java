@@ -30,6 +30,18 @@ class CasualTimeTest {
         assertEquals("half past 3", CasualTime.convertToCasual("03:30"));
         assertEquals("half past 5", CasualTime.convertToCasual("17:30"));
     }
+    @Test
+    void twentyPast() {
+        assertEquals("20 past 1", CasualTime.convertToCasual("13:20"));
+        assertEquals("20 past 3", CasualTime.convertToCasual("03:20"));
+        assertEquals("20 past 7", CasualTime.convertToCasual("19:20"));
+    }
+    @Test
+    void minutesTo() {
+        assertEquals("35 minutes to 2", CasualTime.convertToCasual("13:25"));
+        assertEquals("51 minutes to 6", CasualTime.convertToCasual("05:09"));
+        assertEquals("13 minutes to 10", CasualTime.convertToCasual("21:47"));
+    }
 
 
 }

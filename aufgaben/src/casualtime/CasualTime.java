@@ -29,24 +29,18 @@ public class CasualTime {
         int hour = Integer.parseInt(time[0]);
         int minutes = Integer.parseInt(time[1]);
         if (minutes == 0) {
-            if (hour == 0) {
-                return 12 + " o'clock";
-            }
-            if(hour > 12) {
-                return hour-12 + " o'clock";
-            }
-            return hour + " o'clock";
+            return hourFormat(hour) + " o'clock";
         } else if (minutes == 30) {
-            if (hour == 0) {
-                return "half past " + hour;
-            }
-            if(hour > 12) {
-                hour -=12;
-                return "half past " + hour;
-            }
-            return "half past " + hour;
-
+            return "half past " + hourFormat(hour);
+        } else if (minutes == 20) {
+            return "20 past "+ hourFormat(hour);
         }
-        return "";
+        return 60-minutes + " minutes to " + (hourFormat(hour)+1);
     }
+    public static Integer hourFormat (int hour) {
+        if (hour == 0) return 12;
+        else if (hour > 12) return hour-12;
+        return hour;
+    }
+
 }
