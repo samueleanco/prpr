@@ -26,8 +26,10 @@ class CasualTimeTest {
 
     @Test
     void half() {
-        // TODO: Tests für "half past"
+        assertEquals("half past 1", CasualTime.convertToCasual("13:30"));
+        assertEquals("half past 3", CasualTime.convertToCasual("03:30"));
+        assertEquals("half past 5", CasualTime.convertToCasual("17:30"));
     }
 
-    // TODO: Weitere Tests 
+
 }
