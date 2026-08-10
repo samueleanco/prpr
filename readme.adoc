@@ -7,9 +7,9 @@
 :table-stripes: even
 
 
-Bearbeitet durch: _Vorname Nachname_
+Bearbeitet durch: _Samuele Ancona_
 
-E-Mail: _...@students.fhnw.ch_
+E-Mail: _samuele.ancona@students.fhnw.ch_
 
 == Sinn und Zweck
 
