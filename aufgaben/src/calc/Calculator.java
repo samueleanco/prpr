@@ -5,8 +5,8 @@ import static java.lang.Character.isDigit;
 public class Calculator {
     //
 
-    public static final int MAX_DIGITS= 15; // maximum number of digits in a number
-    public static final int  MAX_DECIMALS = 10;
+//    public static final int MAX_DIGITS= 15; // maximum number of digits in a number
+//    public static final int  MAX_DECIMALS = 10;
 
     public Calculator() {
 
@@ -23,8 +23,8 @@ public class Calculator {
         // declare variables
         int index;
         int end;
-        int space; // have spacings
-        int d;
+//        int space; // have spacings
+//        int d;
         double a,s;
         char o; // operator
 
@@ -66,21 +66,21 @@ public class Calculator {
     }
 
 
-    private static int findSpace(String s) {
-        int i = 0;
-        while (true) {
-          char c;
-          if(i<s.length()) {
-              c = s.charAt(i);
-          }else
-              c=0;
-
-            if (!(c == 32)) break;
-            i++;
-        }
-        ;
-        return i;
-    }
+//    private static int findSpace(String s) {
+//        int i = 0;
+//        while (true) {
+//          char c;
+//          if(i<s.length()) {
+//              c = s.charAt(i);
+//          }else
+//              c=0;
+//
+//            if (!(c == 32)) break;
+//            i++;
+//        }
+//        ;
+//        return i;
+//    }
 
 
     /**
@@ -105,7 +105,7 @@ public class Calculator {
 
 
         int ind = start;
-        int end = 0;
+//        int end = 0;
 
         boolean check = false; // initialize
         if(charfinder(s,ind) == '-') ind++;
