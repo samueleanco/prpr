@@ -37,6 +37,7 @@ public class CalculatorTest {
         assertEquals("0.0", Calculator.evaluate("-1.0+1.0"));
         assertEquals("-1.0", Calculator.evaluate("-2.0+1"));
         assertEquals("1.5", Calculator.evaluate("2.0+-0.5"));
+        assertEquals("-4.0", Calculator.evaluate("-2+-2") );
     }
 
     @Test
