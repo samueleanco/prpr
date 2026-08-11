@@ -18,6 +18,20 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
+=== Dienstag, 11.08.2026
+
+==== Was habe ich heute gemacht?
+MorseDecoder gelöst — Decodierung von Morsecode-Zeichen zurück in Text.
+
+==== Spass gemacht hat?
+
+==== Mühsam war?
+Die Lösung mit dem Binärbaum war aufwändig umzusetzen. Ich hätte es lieber rekursiv mit einer Map gelöst, was eleganter und verständlicher gewesen wäre.
+
+==== Was ich noch Anschauen will
+
+'''
+
 === Montag, 10.08.2026
 
 ==== Was habe ich heute gemacht?
