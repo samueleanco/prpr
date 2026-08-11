@@ -25,40 +25,41 @@ public class Calculator {
         int end;
 //        int space; // have spacings
 //        int d;
-        double a,s;
-        char o; // operator
+        double x;
+        double y;
+        char op; // operator
 
         // evaluate
         index= 0;
         end = num(expr,index);
         if(end < 0) return "invalid number";
-        a=Double.parseDouble(expr.substring(index, end)  );
+        x=Double.parseDouble(expr.substring(index, end)  );
         index = fast_forward(expr ,end);
 
         // index = findSpace(expr, index);
         // a =evaluate(expr,index,a);
         // return a
-        if (index == expr.length())     return Double.toString(a);
-        o = expr.charAt(index) ;
+        if (index == expr.length())     return Double.toString(x);
+        op = expr.charAt(index) ;
         index++; // increment index
         index = fast_forward(expr, index);
         end = num(expr, index);;
         if(end < 0)
             return "invalid number";
-        s = Double.parseDouble(expr.substring(index,end));
-        switch (o) {
+        y = Double.parseDouble(expr.substring(index,end));
+        switch (op) {
         case '+' -> {
-                return Double.toString(a + s);
+                return Double.toString(x + y);
             }
         case'-' -> {
-                return Double.toString(a - s);
+                return Double.toString(x - y);
             }
         case'*' -> {
-            return Double.toString(a * s);
+            return Double.toString(x * y);
         }
             case '/' ->
              {
-                    return "" + s / a;
+                    return "" + y / x;
              }
             default -> { return
                          "invalid operator"; }
@@ -104,24 +105,24 @@ public class Calculator {
     private static int num(String s, int start) {
 
 
-        int ind = start;
+        int index = start;
 //        int end = 0;
 
         boolean check = false; // initialize
-        if(charfinder(s,ind) == '-') ind++;
-        while(isDigit(charfinder(s, ind))) {
-            ind++;
+        if(charfinder(s, index) == '-') index++;
+        while(isDigit(charfinder(s, index))) {
+            index++;
                 check = false; // set check to false
         }
-        if (charfinder(s, ind) == 46) {
-            ind++;
-            while (isDigit(charfinder(s, ind)))
-               ind++;
+        if (charfinder(s, index) == 46) {
+            index++;
+            while (isDigit(charfinder(s, index)))
+               index++;
               check = false;
         }
         // if check is false, return index, otherwize -1
         if (!check)
-            return ind;
+            return index;
 
         else return -1;
     }
@@ -129,10 +130,10 @@ public class Calculator {
 
 
 
-    private static char charfinder(String s, int x) {
+    private static char charfinder(String s, int index) {
         // check, if index is smaller then length
-        if(x <s.length()) {
-            return  s.charAt(x);
+        if(index <s.length()) {
+            return  s.charAt(index);
             } else
             return '\0';
 
