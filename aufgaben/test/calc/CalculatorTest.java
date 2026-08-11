@@ -8,6 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class CalculatorTest {
 
     @Test
+    void invalidNumbers() {
+        assertEquals("invalid number", Calculator.evaluate("abc"));
+        assertEquals("invalid number", Calculator.evaluate("-"));
+        assertEquals("invalid number", Calculator.evaluate("1+abc"));
+        assertEquals("invalid number", Calculator.evaluate("abc+1"));
+    }
+
+    @Test
     void nonNegativeInt() {
         assertEquals("0.0", Calculator.evaluate("0"));
         assertEquals("1.0", Calculator.evaluate("1"));

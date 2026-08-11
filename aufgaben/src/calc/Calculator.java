@@ -58,7 +58,7 @@ public class Calculator {
                 return Double.toString(x * y);
             }
             case '/' -> {
-                 return "" + y / x;
+                 return "" + x / y;
             }
             default -> { return
                          "invalid operator"; }
@@ -106,20 +106,31 @@ public class Calculator {
 
         int index = start;
 //        int end = 0;
+        boolean hasDigit = false;
+
 
         // initialize
         if (charFinder(s, index) == '-') index++;
         while (isDigit(charFinder(s, index))) {
             index++;
             // set check to false
+            hasDigit = true;
         }
         if (charFinder(s, index) == 46) {
             index++;
-            while (isDigit(charFinder(s, index)))
-              index++;
+            while (isDigit(charFinder(s, index))) {
+                index++;
+                hasDigit = true;
+            }
+
+        }
+
+        if (hasDigit) {
+            return index;
+        } else {
+            return -1;
         }
         // if check is false, return index, otherwize -1
-        return index;
     }
 
 
