@@ -30,37 +30,36 @@ public class Calculator {
         char op; // operator
 
         // evaluate
-        index= 0;
+        index = 0;
         end = num(expr,index);
-        if(end < 0) return "invalid number";
-        x=Double.parseDouble(expr.substring(index, end)  );
+        if (end < 0) return "invalid number";
+        x = Double.parseDouble(expr.substring(index, end));
         index = fast_forward(expr ,end);
 
         // index = findSpace(expr, index);
         // a =evaluate(expr,index,a);
         // return a
-        if (index == expr.length())     return Double.toString(x);
-        op = expr.charAt(index) ;
+        if (index == expr.length()) return Double.toString(x);
+        op = expr.charAt(index);
         index++; // increment index
         index = fast_forward(expr, index);
-        end = num(expr, index);;
+        end = num(expr, index);
         if(end < 0)
             return "invalid number";
         y = Double.parseDouble(expr.substring(index,end));
         switch (op) {
-        case '+' -> {
+            case '+' -> {
                 return Double.toString(x + y);
             }
-        case'-' -> {
+            case '-' -> {
                 return Double.toString(x - y);
             }
-        case'*' -> {
-            return Double.toString(x * y);
-        }
-            case '/' ->
-             {
-                    return "" + y / x;
-             }
+            case '*' -> {
+                return Double.toString(x * y);
+            }
+            case '/' -> {
+                 return "" + y / x;
+            }
             default -> { return
                          "invalid operator"; }
         }
@@ -88,9 +87,9 @@ public class Calculator {
      * @return The index of the first character in 's' that comes after the 'start' index and is not a space.
      */
     private static int fast_forward(String s,int start) {
-        int index=start;
-        while(charfinder(s,index)==32){
-           index ++;
+        int index = start;
+        while(charFinder(s,index) == 32){
+           index++;
         }
 
         return index;       // return resulting index
@@ -108,37 +107,29 @@ public class Calculator {
         int index = start;
 //        int end = 0;
 
-        boolean check = false; // initialize
-        if(charfinder(s, index) == '-') index++;
-        while(isDigit(charfinder(s, index))) {
+        // initialize
+        if (charFinder(s, index) == '-') index++;
+        while (isDigit(charFinder(s, index))) {
             index++;
-                check = false; // set check to false
+            // set check to false
         }
-        if (charfinder(s, index) == 46) {
+        if (charFinder(s, index) == 46) {
             index++;
-            while (isDigit(charfinder(s, index)))
-               index++;
-              check = false;
+            while (isDigit(charFinder(s, index)))
+              index++;
         }
         // if check is false, return index, otherwize -1
-        if (!check)
-            return index;
-
-        else return -1;
+        return index;
     }
 
 
 
 
-    private static char charfinder(String s, int index) {
+    private static char charFinder(String s, int index) {
         // check, if index is smaller then length
-        if(index <s.length()) {
+        if (index <s.length()) {
             return  s.charAt(index);
-            } else
+        } else
             return '\0';
-
-
-     }
-
-
+    }
 }
