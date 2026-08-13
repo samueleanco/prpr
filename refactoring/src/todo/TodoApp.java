@@ -28,6 +28,7 @@ public class TodoApp {
     private static final int HEIGHT = 300;
     private final Gui gui = Gui.create("Todo List", WIDTH, HEIGHT);
     private String currentTask = "";
+    private TaskManager taskManager;
 
     public static void main(String[] args) {
         new TodoApp().createAndShowGUI();
@@ -46,14 +47,17 @@ public class TodoApp {
         textField.setTextColor(new Color(0, 0, 0));
 
         var textArea = new TextArea(10, 20 + textField.getHeight(), 380, 200);
-        textArea.setText(new TaskManager().printTaskList(tasks));
+        taskManager = new TaskManager();
+        textArea.setText(taskManager.printTaskList(tasks));
 
         var addButton = new Button("Add", WIDTH - 120, HEIGHT - 40, 50, 30) {
+
             public void onLeftClick(double _x, double _y) {
                 if (!currentTask.isEmpty()) {
                     tasks.add(currentTask);
                 }
-                textArea.setText(new TaskManager().printTaskList(tasks));
+
+                textArea.setText(taskManager.printTaskList(tasks));
                 currentTask = "";
                 textField.setText("");
             }
