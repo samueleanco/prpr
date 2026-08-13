@@ -1,8 +1,5 @@
 package todo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import ch.trick17.gui.Color;
 import ch.trick17.gui.Gui;
 import ch.trick17.gui.widget.TextField;
@@ -23,7 +20,6 @@ import ch.trick17.gui.widget.Button;
  */
 public class TodoApp {
 
-    private final List<String> tasks = new ArrayList<>();
     private static final int WIDTH = 400;
     private static final int HEIGHT = 300;
     private final Gui gui = Gui.create("Todo List", WIDTH, HEIGHT);
@@ -46,36 +42,29 @@ public class TodoApp {
         textField.setText("Add new Task");
         textField.setTextColor(new Color(0, 0, 0));
 
-        var textArea = new TextArea(10, 20 + textField.getHeight(), 380, 200);
         taskManager = new TaskManager();
-        textArea.setText(taskManager.printTaskList(tasks));
+        var textArea = new TextArea(10, 20 + textField.getHeight(), 380, 200);
+        textArea.setText(taskManager.printTaskList());
 
         var addButton = new Button("Add", WIDTH - 120, HEIGHT - 40, 50, 30) {
-
             public void onLeftClick(double _x, double _y) {
-                if (!currentTask.isEmpty()) {
-                    tasks.add(currentTask);
-                }
-
-                textArea.setText(taskManager.printTaskList(tasks));
+                taskManager.addTask(currentTask);
+                textArea.setText(taskManager.printTaskList());
                 currentTask = "";
                 textField.setText("");
             }
         };
         var clearButton = new Button("Clear", WIDTH - 60, HEIGHT - 40, 50, 30) {
             public void onLeftClick(double _x, double _y) {
-                tasks.clear();
+                taskManager.clear();
                 currentTask = "";
                 textField.setTextColor(new Color(100, 100, 100));
                 textField.setText("Add new Task");
                 textArea.setText("");
-
             }
         };
         gui.addComponents(textField, textArea, addButton, clearButton);
         gui.open();
         gui.runUntilClosed();
     }
-
-
 }
