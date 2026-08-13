@@ -23,13 +23,16 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 ==== Was habe ich heute gemacht?
 MorseDecoder gelöst — Decodierung von Morsecode-Zeichen zurück in Text.
 DateTimeFormatter gelöst — Interface `DateTimeFormat` mit `FormalDateTimeFormat` und `CasualDateTimeFormat`, sowie die Klasse `TextFormatter`.
+Calc gelöst — bestehenden Code aufgeräumt und Bugs behoben (falsche Division, fehlerhafte `invalidNumbers`-Logik).
 
 ==== Spass gemacht hat?
 Der TDD-Zyklus hat gut funktioniert, vor allem bei den Interface-Implementierungen: erst die Tests schreiben, dann die Methoden implementieren war sehr übersichtlich.
+Beim Calc-Aufgabe konnte ich Schritt für Schritt Verbesserungen vornehmen — Variablen umbenennen, Formatierung anpassen — und sehen wie der Code lesbarer wurde.
 
 ==== Mühsam war?
 Die Lösung mit dem Binärbaum beim MorseDecoder war aufwändig umzusetzen. Ich hätte es lieber rekursiv mit einer Map gelöst, was eleganter und verständlicher gewesen wäre.
 Beim `TextFormatter` hat immer der letzte Punkt gefehlt — dieser Bug hat einige Zeit gekostet bis er gefunden war.
+Beim Calc war es am Anfang etwas verwirrend, wie die bestehenden Funktionen genau zusammenarbeiten.
 
 ==== Was ich noch Anschauen will
 
