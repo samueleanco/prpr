@@ -18,6 +18,21 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
+=== Montag, 17.08.2026
+
+==== Was habe ich heute gemacht?
+TicTacToe gelöst — das Spiel objektorientiert mit mehreren Klassen umgesetzt, basierend auf vorgegebenen Methodensignaturen.
+
+==== Spass gemacht hat?
+Die Methodenvorgaben haben es angenehm gemacht, strukturiert vorzugehen — man wusste von Anfang an, was wohin gehört. Besonders schön war zu sehen, wie die Logik sauber auf Klassen aufgeteilt werden kann und wie viel übersichtlicher das Ergebnis dadurch wird. Das Spiel war am Ende einfacher umzusetzen als man zunächst vermutet hätte.
+
+==== Mühsam war?
+Enums waren anfangs unbekanntes Terrain. Es hat aber nicht lange gedauert, bis das Konzept klar war und sie sich natürlich in die Lösung eingefügt haben.
+
+==== Was ich noch Anschauen will
+
+'''
+
 === Freitag, 15.08.2026
 
 ==== Was habe ich heute gemacht?
