@@ -22,6 +22,7 @@ public class TicTacToe {
     }
 
     public boolean isOver() {
+        if (getWinner()!= null || moves == 9) return true;
         return false;
     }
     public void play(int row, int col) {
