@@ -18,6 +18,21 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
+=== Freitag, 15.08.2026
+
+==== Was habe ich heute gemacht?
+Refactoring der To-do App — Code gemäss Anleitung umstrukturiert: Variablen umbenannt, Code formatiert und Methoden/Klassen verschoben.
+
+==== Spass gemacht hat?
+Den Code zu formatieren und Variablen sinnvoll umzubenennen hat Spass gemacht. Man sieht direkt, wie der Code lesbarer und übersichtlicher wird.
+
+==== Mühsam war?
+Ab und zu hat etwas nicht so funktioniert wie erwartet — zum Beispiel wurde anstatt eine Methode zu verschieben sie extrahiert. Das hat manchmal für Verwirrung gesorgt und etwas Zeit gekostet.
+
+==== Was ich noch Anschauen will
+
+'''
+
 === Dienstag, 11.08.2026
 
 ==== Was habe ich heute gemacht?
