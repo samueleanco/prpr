@@ -5,9 +5,9 @@
 :table-frame: ends
 :table-stripes: even
 
-Bearbeitet durch: _Vorname Nachname_
+Bearbeitet durch: Samuele Ancona
 
-E-Mail: _...@students.fhnw.ch_
+E-Mail: samuele.ancona@students.fhnw.chnein
 
 '''
 == Do's
@@ -18,15 +18,41 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
-=== Welche/s Tutorial/s habe ich durchgearbeitet?
+=== Montag, 17.08.2026
 
-=== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
+==== Welche/s Tutorial/s habe ich durchgearbeitet?
+— Java Grundkurs 2
 
-=== Spass gemacht hat?
+==== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
 
-=== Mühsam war?
+*Konventionen & Grundlagen:*
 
-=== Was ich noch Anschauen will
+* Static-Variablen werden per Konvention komplett in Grossbuchstaben geschrieben.
+* `equals` und `hashCode` müssen immer beide überschrieben werden — nur eine zu ändern führt zu inkonsistentem Verhalten.
+
+*Objektorientierung:*
+
+* Vererbung mit `extends`: eine Klasse erbt alle Methoden und Felder der Elternklasse und kann sie bei Bedarf überschreiben.
+* Records kennengelernt — eine kompakte Möglichkeit, unveränderliche Datenklassen zu definieren, ohne Boilerplate wie Getter oder Konstruktor manuell schreiben zu müssen.
+
+*Fehlerbehandlung:*
+
+* `try-catch`-Blöcke für die Fehlerbehandlung; Fehlerausgaben über `System.err` statt `System.out`, damit sie klar als Fehler erkennbar sind.
+* Checked Exceptions: Ausnahmen, die vom Compiler erzwungen werden und explizit behandelt oder weitergegeben werden müssen.
+* Spezifische Exception-Typen im `catch`-Block ermöglichen gezielte Fehlermeldungen pro Fehlerfall.
+
+*Streams:*
+
+* Streams kennengelernt — ermöglichen funktionale Verarbeitung von Datenmengen, z.B. mit `filter`, `map` oder `collect`.
+
+==== Spass gemacht hat?
+Neues zu entdecken und bekannte Themen zu repetieren. Gerade bei den Exceptions und Streams war es schön, endlich ein klareres Bild zu bekommen.
+
+==== Mühsam war?
+Vieles im Tutorial war bereits bekannt, was das Durcharbeiten stellenweise etwas zäh gemacht hat.
+
+==== Was ich noch Anschauen will
+* Nested Classes genauer anschauen
 
 
 
