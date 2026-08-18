@@ -18,6 +18,57 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
+=== Dienstag, 18.08.2026
+
+==== Welche/s Tutorial/s habe ich durchgearbeitet?
+— Java Kurs Fortgeschritten (Generics, Functional Interfaces, Threads, File I/O)
+
+==== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
+
+*Generics:*
+
+* Generics ermöglichen es, Methoden und Klassen für verschiedene Typen wiederverwendbar zu machen — ohne für jeden Typ eine eigene Version schreiben zu müssen.
+* Beispiel: eine generische `contains`-Methode (`boolean contains(T[] array, T value)`) deckt beliebige Typen mit einem einzigen Aufruf ab.
+* Eigene generische Klassen schreiben, z.B. eine `Pair<A, B>`-Klasse, die zwei Werte unterschiedlicher Typen kapselt.
+* Wildcards (`?` und `? extends T`) erlauben flexible Typparameter bei generischen Methoden und Klassen.
+* *Type Erasure*: Zur Laufzeit werden die Typinformationen aus Generics entfernt — Java ersetzt sie durch `Object` oder die obere Schranke. Typprüfungen finden also nur zur Compile-Zeit statt, nicht zur Laufzeit.
+
+*Optional mit Streams:*
+
+* `Optional<T>` als Wrapper für potenziell fehlende Werte — vermeidet `NullPointerException` durch explizites Behandeln des Fehlerfalls.
+* Kombination von `Optional` mit der Stream API (z.B. via `flatMap` oder `filter`) für elegantere Fehlerbehandlung innerhalb von Pipelines.
+
+*Functional Interfaces & Stream API:*
+
+* Functional Interfaces fokussieren auf das *Was* (deklarativ), nicht das *Wie* (imperativ) — man beschreibt das gewünschte Ergebnis, nicht den Rechenweg.
+* `Consumer<T>`: nimmt einen Wert entgegen und gibt nichts zurück — nützlich für Seiteneffekte wie Ausgaben oder Logging.
+* `Predicate<T>`: nimmt einen Wert und liefert einen `boolean` — ideal als Filterbedingung in Streams.
+* Kombination von Functional Interfaces mit der Stream API ermöglicht kompakte, gut lesbare Datenpipelines.
+* Rückblick auf Prog1-Aufgaben: viele hätten sich mit Functional Interfaces eleganter lösen lassen.
+* `Runnable`-Interface kennengelernt: kapselt eine ausführbare Aktion ohne Parameter und ohne Rückgabewert — dient als Grundlage für Threads.
+
+*Concurrent Programming:*
+
+* `Thread`-Klasse kennengelernt: ermöglicht die parallele Ausführung von Code in separaten Ausführungssträngen.
+* `synchronized` bei Methoden verhindert Race Conditions, indem sichergestellt wird, dass immer nur ein Thread gleichzeitig auf die Methode zugreifen kann.
+* Leichte Einführung in die Grundkonzepte der nebenläufigen Programmierung — ein Thema, das deutlich mehr Tiefe hat als in dieser Einheit abgedeckt.
+
+*File I/O:*
+
+* `FileReader` und `BufferedReader` kombinieren: `FileReader` öffnet die Datei zeichenweise, `BufferedReader` puffert den Zugriff für effizienteres zeilenweises Lesen mit `readLine()`.
+
+==== Spass gemacht hat?
+Die Generics-Thematik war sehr aufschlussreich — besonders der Moment, als klar wurde, wie viel Redundanz eine einzige generische Methode eliminieren kann. Functional Interfaces haben einen neuen Blickwinkel auf das Lösen von Problemen eröffnet: deklarativ statt imperativ zu denken fühlt sich eleganter und ausdrucksstärker an. Der Rückbezug auf Prog1-Aufgaben hat das Gelernte greifbar und konkret gemacht.
+
+==== Mühsam war?
+Type Erasure war anfangs schwer zu greifen — das Konzept, dass Typinformationen zur Laufzeit verschwinden, ist nicht intuitiv. Concurrent Programming war dichtes Terrain: viele neue Konzepte auf einmal, die sich nicht sofort vollständig setzen.
+
+==== Was ich noch Anschauen will
+* Concurrent Programming vertieft anschauen — insbesondere Deadlocks, `ExecutorService` und `Future`
+* Nested Classes (noch offen vom Vortag)
+
+'''
+
 === Montag, 17.08.2026
 
 ==== Welche/s Tutorial/s habe ich durchgearbeitet?
@@ -53,28 +104,4 @@ Vieles im Tutorial war bereits bekannt, was das Durcharbeiten stellenweise etwas
 
 ==== Was ich noch Anschauen will
 * Nested Classes genauer anschauen
-
-Notizen: Java Kurs Fortgeschritten
-generics einführung wie man sie nutzt und was sie bringen.
-optional mit streams.
-generische methoden und klassen einführung und sinn davon.
-generische methode wie boolean contains damit man mehrere typen
-direkt mit einer methode abdeckt, ohne jeweils immer eine neue
-methode für den Typen schreiben zu müssen.
-eigene pair methode schreiben.
-wie man wildcards nutzt mit generischen klassen oder methoden.
-type erasure bei generischen klassen
-functional interfaces einführung. konzentriert sich auf das Was und
-weniger auf das Wie etwas geschieht.
-functionale interfaces in kombinaton mit stream API.
-interfaces consume, predicate vorgestellt bekommen, gibt mir
-eine Vorstellung wie man bereits im letzten Semester bearbeitete Aufgaben
-in prog1 beispielsweise, auch lösen könnte.
-einführung in runnable interface und sinn davon.
-thread klasse vorgestellt und concurrent programming leicht eingeführt.
-synchronized bei methoden anwenden.
-filereader und bufferedreader kombinieren .
-
-
-
 
