@@ -64,6 +64,12 @@ methode für den Typen schreiben zu müssen.
 eigene pair methode schreiben.
 wie man wildcards nutzt mit generischen klassen oder methoden.
 type erasure bei generischen klassen
+functional interfaces einführung. konzentriert sich auf das Was und
+weniger auf das Wie etwas geschieht.
+functionale interfaces in kombinaton mit stream API.
+interfaces consume, predicate vorgestellt bekommen, gibt mir
+eine Vorstellung wie man bereits im letzten Semester bearbeitete Aufgaben
+in prog1 beispielsweise, auch lösen könnte.
 
 
 
