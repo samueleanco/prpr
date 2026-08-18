@@ -54,5 +54,17 @@ Vieles im Tutorial war bereits bekannt, was das Durcharbeiten stellenweise etwas
 ==== Was ich noch Anschauen will
 * Nested Classes genauer anschauen
 
+Notizen: Java Kurs Fortgeschritten
+generics einführung wie man sie nutzt und was sie bringen.
+optional mit streams.
+generische methoden und klassen einführung und sinn davon.
+generische methode wie boolean contains damit man mehrere typen
+direkt mit einer methode abdeckt, ohne jeweils immer eine neue
+methode für den Typen schreiben zu müssen.
+eigene pair methode schreiben.
+wie man wildcards nutzt mit generischen klassen oder methoden.
+type erasure bei generischen klassen
+
+
 
 
