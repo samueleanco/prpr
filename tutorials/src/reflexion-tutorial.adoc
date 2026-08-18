@@ -70,6 +70,10 @@ functionale interfaces in kombinaton mit stream API.
 interfaces consume, predicate vorgestellt bekommen, gibt mir
 eine Vorstellung wie man bereits im letzten Semester bearbeitete Aufgaben
 in prog1 beispielsweise, auch lösen könnte.
+einführung in runnable interface und sinn davon.
+thread klasse vorgestellt und concurrent programming leicht eingeführt.
+synchronized bei methoden anwenden.
+filereader und bufferedreader kombinieren .
 
 
 
