@@ -18,10 +18,44 @@ IMPORTANT: KI die Reflexion schreiben lassen.
 
 '''
 
+=== Mittwoch, 19.08.2026
+
+==== Welche/s Tutorial/s habe ich durchgearbeitet?
+— https://www.youtube.com/watch?v=CBYHwZcbD-s[Data Structures and Algorithms Full Course — Brocode]
+ca. 60 Minuten
+
+==== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
+
+*Kannte ich schon gut:*
+
+* *Big O Notation* — Laufzeit- und Speicherkomplexität mit wachsender Eingabegrösse n: O(1) konstant, O(log n) logarithmisch, O(n) linear, O(n log n), O(n²) quadratisch. Es geht um Wachstumsverhalten, nicht um exakte Millisekunden.
+* *Stack (LIFO – Last In, First Out)* — Wie ein Tellerstapel: `push()` legt oben drauf, `pop()` nimmt oben weg, `peek()` schaut oben hin ohne zu entfernen. Anwendungsfälle: Undo-Funktion, Browser-Zurück, Rekursions-Aufrufstack.
+* *Queue (FIFO – First In, First Out)* — Wie eine Warteschlange: `enqueue` hinten anstellen, `dequeue` vorne bedient werden. Anwendungsfälle: Druckerwarteschlange, Task-Scheduling.
+
+*Kannte ich zum Teil — neues Wissen gewonnen:*
+
+* *Priority Queue* — Wie eine Queue, aber Elemente haben eine Priorität; höchste Priorität wird zuerst bedient, unabhängig von der Eintreff-Reihenfolge. In Java: `PriorityQueue`-Klasse, nutzt intern einen Heap.
+* *Linked List* — Kette von Nodes (Wert + Pointer auf nächsten Node), kein zusammenhängender Speicherblock nötig. Einfügen/Löschen an bekannter Stelle O(1), aber Index-Zugriff O(n). Varianten: Singly Linked List, Doubly Linked List.
+* *Dynamic Arrays* — Array, das bei Bedarf automatisch wächst (Kapazität verdoppeln, wenn voll). Grundlage von Javas `ArrayList`. Amortized O(1) pro `add`, weil Verdoppelungskosten selten anfallen.
+* *LinkedList vs. ArrayList* — `ArrayList`: schneller Index-Zugriff O(1), Einfügen/Löschen in der Mitte O(n). `LinkedList`: Einfügen/Löschen an bekannter Stelle O(1), kein Index-Zugriff O(n). Faustregel: viele Lesezugriffe → `ArrayList`; viele Einfügungen/Löschungen → `LinkedList`.
+
+==== Spass gemacht hat?
+Der Kurs visualisiert Pointer-Operationen anschaulich — das hat geholfen, Linked Lists nochmals klarer zu sehen. Schön, bekannte Themen mit mehr Tiefe zu betrachten und den Unterschied ArrayList vs. LinkedList endlich sauber erklärt zu sehen.
+
+==== Mühsam war?
+Da viel Grundwissen schon vorhanden war, war der Einstieg etwas langsam. Priority Queue und Heap-Interna waren kurz und wären mehr Tiefe wert gewesen.
+
+==== Was ich noch Anschauen will
+* Rest des Kurses (ab Minute 60): Trees, Hash Maps, Graphs, Sorting Algorithms.
+* Heap-Datenstruktur im Detail — wie `PriorityQueue` intern funktioniert.
+
+'''
+
 === Dienstag, 18.08.2026
 
 ==== Welche/s Tutorial/s habe ich durchgearbeitet?
 — Java Kurs Fortgeschritten (Generics, Functional Interfaces, Threads, File I/O)
+1h 51 min
 
 ==== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
 
@@ -72,7 +106,7 @@ Type Erasure war anfangs schwer zu greifen — das Konzept, dass Typinformatione
 === Montag, 17.08.2026
 
 ==== Welche/s Tutorial/s habe ich durchgearbeitet?
-— Java Grundkurs 2
+— Java Grundkurs 2 / 2h 25min
 
 ==== Was habe ich aus dem Tutorial gewonnen (aka gelernt)?
 
